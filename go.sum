@@ -1,0 +1,10 @@
+github.com/coreos/go-systemd/v22 v22.3.2 h1:D9/bQk5vlXQFZ6Kwuu6zaiXJ9oTPe68++AzAJc1DzSI=
+github.com/coreos/go-systemd/v22 v22.3.2/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
+github.com/godbus/dbus/v5 v5.0.4/go.mod h1:xhWf0FNVPg57R7Z0UbKHbJfkEywrmjJnf7w5xrFpKfA=
+github.com/google/go-cmp v0.4.0 h1:xsAVV57WRhGj6kEIi8ReJzQlHHqcBYCElAvkovg3B/4=
+github.com/google/go-cmp v0.4.0/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=
+github.com/urso/diag v0.0.0-20200210123136-21b3cc8eb797 h1:OHNw/6pXODJAB32NujjdQO/KIYQ3KAbHQfCzH81XdCs=
+github.com/urso/diag v0.0.0-20200210123136-21b3cc8eb797/go.mod h1:pNWFTeQ+V1OYT/TzWpnWb6eQBdoXpdx+H+lrH97/Oyo=
+github.com/urso/sderr v0.0.0-20210525210834-52b04e8f5c71 h1:CehQeKbysHV8J2V7AD0w8NL2x1h04kmmo/Ft5su4lU0=
+github.com/urso/sderr v0.0.0-20210525210834-52b04e8f5c71/go.mod h1:Wp40HwmjM59FkDIVFfcCb9LzBbnc0XAMp8++hJuWvSU=
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=

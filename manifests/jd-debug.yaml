@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: jd-debug
+  name: jd-debug
+spec:
+  selector:
+    matchLabels:
+      app: jd-debug
+  template:
+    metadata:
+      labels:
+        app: jd-debug
+    spec:
+      containers:
+      - image: <repo>/jd-debug
+        imagePullPolicy: Always
+        name: jd-debug
+        resources: {}
+        securityContext:
+          runAsUser: 0
+        #   privileged: true
+        volumeMounts:
+        - mountPath: /var/log/journal
+          name: varlog
+          readOnly: true
+        # adding those did not help when running different systemd versions in container and on host
+        # - mountPath: /etc/machine-id
+        #   name: machineid
+        #   readOnly: true
+        # - mountPath: /run/systemd
+        #   name: runsystemd
+        #   readOnly: true
+        # - mountPath: /etc/hostname
+        #   name: hn
+        #   readOnly: true
+      volumes:
+      - hostPath:
+          path: /var/log/journal
+          type: ""
+        name: varlog
+      # - hostPath:
+      #     path: /etc/machine-id
+      #     type: ""
+      #   name: machineid
+      # - hostPath:
+      #     path: /run/systemd
+      #     type: ""
+      #   name: runsystemd
+      # - hostPath:
+      #     path: /etc/hostname
+      #     type: ""
+      #   name: hn
